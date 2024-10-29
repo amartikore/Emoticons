@@ -1,7 +1,7 @@
 Backbase CI/CD Deployment Overview
-user
-How the Backbase platform handles CICD deployments for their projects ?
-ChatGPT
+## user
+## Q. How the Backbase platform handles CICD deployments for their projects ?
+## ChatGPT
 Backbase provides a robust approach to Continuous Integration and Continuous Deployment (CI/CD) for projects using its platform. Generally, the Backbase CI/CD deployment pipeline includes elements such as source control, automated testing, and environment provisioning, which can be customized to support various deployment workflows. Here’s an overview of how Backbase handles CI/CD for its projects:
 
 1. **Code Repository & Version Control**:  
@@ -37,9 +37,9 @@ Backbase provides a robust approach to Continuous Integration and Continuous Dep
    - Rollback mechanisms are implemented through containerization, Helm, and Kubernetes, allowing deployments to revert to a previous stable version in case of issues.
 
 Backbase’s CI/CD deployment approach supports both microservices and front-end architectures, making it adaptable for large-scale digital banking projects. This helps ensure a reliable, flexible, and efficient delivery pipeline, ultimately enabling faster iterations and a shorter time-to-market.
-user
-How we can improve the Angular 16 application performance ?
-ChatGPT
+## user
+## How we can improve the Angular 16 application performance ?
+## ChatGPT
 Improving the performance of an Angular 16 application involves a combination of optimizing the code, reducing bundle sizes, leveraging built-in Angular features, and applying best practices. Here are some effective ways to enhance performance in Angular 16:
 
 ### 1. **Optimize Change Detection**
@@ -90,9 +90,9 @@ Improving the performance of an Angular 16 application involves a combination of
    - **Chrome DevTools**: Use Chrome's Performance tab to analyze rendering, JavaScript execution time, and resource loading.
 
 Applying these techniques will help boost performance in an Angular 16 application, resulting in faster load times, smoother interactions, and a better overall user experience.
-user
-What is Angular 16 component lifecycle ? 
-ChatGPT
+## user
+## What is Angular 16 component lifecycle ? 
+## ChatGPT
 Angular 16, like previous versions, provides a series of lifecycle hooks that allow developers to tap into key events during a component’s creation, rendering, and destruction. Here’s a breakdown of Angular’s component lifecycle in Angular 16:
 
 ### 1. **Component Creation Phase**
@@ -155,9 +155,9 @@ After initialization, **ngDoCheck**, **ngAfterContentChecked**, and **ngAfterVie
 - Avoid heavy computations in hooks like `ngDoCheck`, `ngAfterContentChecked`, and `ngAfterViewChecked`.
 - Always unsubscribe from Observables in `ngOnDestroy` to prevent memory leaks.
 - Use `ngOnChanges` to handle input changes rather than repeatedly calling logic in `ngDoCheck`.
-user
-What is deference between service and factory in Angular 26?
-ChatGPT
+## user
+## What is deference between service and factory in Angular 26?
+## ChatGPT
 In Angular, the concepts of **services** and **factories** can sometimes be confusing, as they both aim to provide reusable code that can be injected and shared across different parts of an application. However, Angular (since Angular 2) simplifies dependency injection by using classes as **services**, with no direct concept of factories like AngularJS had.
 
 ### Angular (Post AngularJS, Angular 2+ to Angular 16) - Services Only
@@ -241,9 +241,9 @@ export class AppModule {}
 - **Factory Provider**: Allows you to control service creation with custom logic, but isn’t commonly used in modern Angular applications.
 
 In modern Angular, services are almost always provided as singleton classes, while factory providers are optional and less common compared to the AngularJS era. This change simplifies dependency injection and improves maintainability by using classes as services throughout the framework.
-user
-Why ngRx is used in Angular 16 application ?
-ChatGPT
+## user
+## Why ngRx is used in Angular 16 application ?
+## ChatGPT
 In Angular 16, NgRx is commonly used to manage state across complex applications. Built on the principles of Redux, NgRx provides a predictable state management solution specifically designed for Angular, helping developers handle complex application data in a way that is maintainable, testable, and consistent.
 
 Here are some key reasons why NgRx is used in Angular applications:
@@ -293,9 +293,9 @@ While NgRx is beneficial for applications with complex state management needs, i
 
 ### Summary
 NgRx brings structure, predictability, and scalability to state management in Angular applications. It’s particularly valuable in larger applications or those requiring complex state interactions, side effect management, or sophisticated debugging. While it can introduce some boilerplate, NgRx’s benefits in maintainability, debugging, and performance make it a powerful choice for Angular 16 applications.
-user
-What you mean by the state management in Angular 16 application ?
-ChatGPT
+## user
+## What you mean by the state management in Angular 16 application ?
+## ChatGPT
 State management in an Angular 16 application refers to the practice of handling and maintaining the state (data and UI state) of an application in a structured, consistent way, especially as the application grows in complexity. This involves organizing how data is stored, accessed, modified, and shared across components and services, often through a centralized system.
 
 ### Key Concepts in State Management
@@ -350,9 +350,9 @@ A typical state management flow using NgRx in Angular would look like this:
 ### Summary
 
 State management in Angular 16 focuses on maintaining a predictable, scalable, and consistent way to manage data across the application, especially when handling shared data or complex workflows. It plays a crucial role in improving maintainability and scalability, making it easier to debug and extend the application over time.
-user
-What RxJs operations used in Angular 16 application? Explain in detail. 
-ChatGPT
+## user
+## What RxJs operations used in Angular 16 application? Explain in detail. 
+## ChatGPT
 RxJS (Reactive Extensions for JavaScript) is essential in Angular 16 applications for handling asynchronous operations, event-based programming, and reactive programming. RxJS provides operators that can help transform, combine, filter, and manage data streams efficiently, which is especially useful for working with Observables in Angular.
 
 Here’s a breakdown of commonly used RxJS operators in Angular 16 applications, with explanations of each and how they are commonly applied:
@@ -492,9 +492,9 @@ Here’s a breakdown of commonly used RxJS operators in Angular 16 applications,
 
 ### Summary
 RxJS operators in Angular 16 make it easier to handle asynchronous operations, manage complex data flows, and create a reactive UI. Common operators like `map`, `switchMap`, `combineLatest`, and `catchError` provide the tools for managing real-time data, handling HTTP requests, and responding to user inputs in a streamlined way. These operators are integral in developing highly interactive and responsive Angular applications.
-user
-Explain in details with usage of following RxJS operators for Angular 16 application -combineLatest, tap, pipe, forkJoin, switchMap, mergeMap 
-ChatGPT
+## user
+## Explain in details with usage of following RxJS operators for Angular 16 application -combineLatest, tap, pipe, forkJoin, switchMap, mergeMap 
+## ChatGPT
 Certainly! Each of these RxJS operators plays an important role in managing and transforming streams in Angular 16 applications. Here’s a detailed explanation and usage examples for each:
 
 ---
@@ -679,9 +679,9 @@ fetchAllData(ids: number[]) {
 | `mergeMap`     | Map to inner Observable, allow multiple in parallel     | Enables concurrent inner Observables           |
 
 Each of these operators provides powerful ways to handle real-time data, parallel tasks, and asynchronous processes in Angular, enhancing both the application’s performance and user experience.
-user
-What is observable and observer in RxJs? Explain in detail.
-ChatGPT
+## user
+## What is observable and observer in RxJs? Explain in detail.
+## ChatGPT
 In RxJS, **Observables** and **Observers** are foundational concepts that enable reactive programming, allowing developers to work efficiently with asynchronous data streams in Angular applications. Here’s a breakdown of each, how they interact, and how they’re used.
 
 ---
@@ -864,9 +864,9 @@ In this example:
 - **Subscription**: Created when an Observer subscribes to an Observable, linking the data stream with the consumer and enabling the option to unsubscribe.
 
 In Angular applications, Observables and Observers facilitate handling real-time data, events, and asynchronous operations effectively, making RxJS a powerful tool for reactive programming.
-user
-Why to use Angular material in Angular 16 project ?
-ChatGPT
+## user
+## Why to use Angular material in Angular 16 project ?
+## ChatGPT
 Using Angular Material in an Angular 16 project brings several benefits, especially when creating a clean, responsive, and accessible user interface. Angular Material is a UI component library maintained by Google that implements Material Design guidelines, offering a range of pre-built, high-quality components.
 
 Here’s why Angular Material is a great choice:
@@ -911,9 +911,9 @@ Here’s why Angular Material is a great choice:
 ---
 
 In summary, Angular Material in Angular 16 projects improves UI consistency, speeds up development, enhances accessibility, and enables responsive design, making it ideal for building professional-grade applications.
-user
-How to share the data between different-different components on the Angular 16 application ? 
-ChatGPT
+## user
+## How to share the data between different-different components on the Angular 16 application ? 
+## ChatGPT
 In Angular 16, sharing data between different components can be achieved through various methods, depending on the relationship between those components (parent-child, sibling, or completely unrelated). Here are several common approaches to facilitate data sharing:
 
 ### 1. **Input and Output Properties (Parent-Child Communication)**
@@ -1161,9 +1161,9 @@ In Angular 16, data sharing between different components can be effectively hand
 5. **Event Emitters** for sibling components.
 
 Each method has its use cases and advantages, so you can choose based on the specific requirements of your application.
-user
-Q. Explain new unique features of Angular16 in detail.
-ChatGPT
+## user
+## Q. Explain new unique features of Angular16 in detail.
+## ChatGPT
 Angular 16 introduced several unique features and enhancements aimed at improving performance, developer experience, and flexibility. Here’s a detailed overview of the notable features in Angular 16:
 
 ### 1. **Standalone Components**
@@ -1304,9 +1304,9 @@ Angular 16 also deprecates certain older features, encouraging developers to ado
 ### Conclusion
 
 Angular 16 brings significant enhancements that improve the developer experience, application performance, and code maintainability. Key features such as standalone components, typed forms, signals, and improvements to server-side rendering reflect Angular's commitment to evolving with modern web development needs. These features not only simplify the development process but also enable developers to build more robust and efficient applications.
-user
-Q. How authentication and authorization is handled in Angualr16 application?
-ChatGPT
+## user
+## Q. How authentication and authorization is handled in Angualr16 application?
+## ChatGPT
 In Angular 16 applications, authentication and authorization can be handled using a combination of techniques and libraries that provide a secure way to manage user access and sessions. Here's a detailed overview of how to implement authentication and authorization in Angular 16:
 
 ### 1. **Understanding Authentication vs. Authorization**
@@ -1499,9 +1499,9 @@ Provide users with a way to log out and clear the session data, which can includ
 ### Conclusion
 
 In an Angular 16 application, authentication and authorization can be effectively handled using services, HTTP interceptors, route guards, and token-based authentication methods. This approach helps in securing your application by verifying user identities and controlling access to various resources based on roles and permissions. By following best practices and implementing these mechanisms, you can create a robust and secure Angular application.
-user
-Q. What is standalone component in Angular 16, provide the simple example?
-ChatGPT
+## user
+## Q. What is standalone component in Angular 16, provide the simple example?
+## ChatGPT
 In Angular 16, a **standalone component** is a new feature that allows you to create components without the need for an accompanying Angular module (`NgModule`). This simplifies the structure of Angular applications by reducing the boilerplate code associated with module declarations and provides a more modular approach to building components.
 
 ### Key Features of Standalone Components
